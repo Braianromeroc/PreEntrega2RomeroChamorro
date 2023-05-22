@@ -35,10 +35,6 @@ a{
     justify-content: end;
 }
 
-.nav__ul{
-    display: flex;
-    gap: 40px;
-}
 
 /* indicador */
 
@@ -88,6 +84,12 @@ a{
     margin: 20px;
 }
 
+.tarjeta__titulo--lanzamiento{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
 .tarjeta__formato{
     border: 2px solid black;
     width: 100%;
@@ -132,6 +134,7 @@ a{
 .tarjeta__precio{
     font-size: 1.2rem;
 }
+
 
 /* footer */
 
