@@ -1,0 +1,31 @@
+/* ---reseteo--- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+$color-principal: rgba(160, 4, 38, 0.884);
+$color-negro: black;
+$color-blanco: white;
+$color-rojo: red;
+
+.nav{
+    display: flex;
+    justify-content: end;
+}
+
+@mixin footer{
+    display: flex;
+    justify-content: center;
+}

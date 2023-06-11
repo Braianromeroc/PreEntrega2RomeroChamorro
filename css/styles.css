@@ -1,184 +1,144 @@
 /* ---reseteo--- */
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-ul,ol{
-    list-style: none;
+ul, ol {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-/* ---- */
-
-/* nav */
-
-.header{
-    background-color: rgba(160, 4, 38, 0.884);
-
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.nav {
+  display: flex;
+  justify-content: end;
 }
 
-.header__titulo{
-    color: black;
+.header {
+  background-color: rgba(160, 4, 38, 0.884);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header__titulo {
+  color: black;
 }
 
-.nav{
-    display: flex;
-    justify-content: end;
+.carrusel {
+  border: solid 1px white;
+  border-radius: 24px;
+  overflow: hidden;
 }
 
-
-/* indicador */
-
-.indicador{
-    display: flex;
-    justify-content: start;
+.indicador {
+  display: flex;
+  justify-content: start;
+}
+.indicador__a {
+  padding: 0px 10px 0px 30px;
+  margin: 20px 0px 0px;
+  font-family: "roboto", sans-serif;
+  src: url(../fonts/Roboto-ThinItalic.ttf);
+}
+.indicador__p {
+  padding: 0px 0px;
+  margin: 20px 0px 0px;
+  font-family: "roboto", sans-serif;
+  src: url(../fonts/Roboto-ThinItalic.ttf);
 }
 
-.ind{
-    padding: 0px 10px 0px 30px;
-    margin: 20px 0px 0px;
-    font-family:"roboto", sans-serif;
-    src: url(../fonts/Roboto-ThinItalic.ttf);
+.titulo__span {
+  padding: 10px;
+}
+.titulo__span--2 {
+  padding: 25px;
 }
 
-.ind2{
-    padding: 0px 0px;
-    margin: 20px 0px 0px;
-    font-family:"roboto", sans-serif;
-    src: url(../fonts/Roboto-ThinItalic.ttf);
+.tarjeta {
+  margin-bottom: 30px;
+}
+.tarjeta__titulo {
+  font-size: 1.2rem;
+}
+.tarjeta__titulo--principal {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.tarjeta__titulo--lanzamiento {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+.tarjeta__titulo--secundario {
+  font-size: 0.8rem;
+  color: red;
+}
+.tarjeta__formato {
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.tarjeta img {
+  width: 100%;
+  height: 70%;
+}
+.tarjeta__cuerpo {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px;
+}
+.tarjeta__precio {
+  font-size: 1.2rem;
 }
 
-/* carrusel */
-
-.carrusel{
-    border: solid 1px white;
-    border-radius: 24px;
-    overflow: hidden;
+.footer {
+  background-color: rgba(160, 4, 38, 0.884);
+  display: flex;
+  justify-content: center;
+  border: solid black 1px;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.footer__logo img {
+  width: 200px;
+}
+.footer__cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__pie {
+  border-top: solid black 1px;
 }
 
-/* img flotante */
-
-.img__flotante{
-    height: 50vh;
-    overflow: hidden;
+.video {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.video__flotante {
+  height: 60vh;
+  border: solid white 1px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-/* tarjetas */
-
-.tarjeta{
-    margin-bottom: 30px;
+.img__flotante {
+  height: 50vh;
+  overflow: hidden;
 }
 
-.tarjeta__titulo--principal{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.tarjeta__titulo--lanzamiento{
-    display: flex;
-    justify-content: start;
-    margin-bottom: 20px;
-}
-
-.tarjeta__formato{
-    border: 2px solid black;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    overflow: hidden;
-}
-
-
-.tarjeta img{
-    width: 100%;
-    height: 70%;
-}
-
-
-.tarjeta__cuerpo{
-    display: flex;
-    flex-direction: column;
-    height: 30%;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 0px;
-}
-
-.tarjeta__titulo{
-    font-size: 1.2rem;
-}
-
-.tarjeta__titulo--secundario{
-    font-size: 0.8rem;
-    color: red;
-}
-
-.titulo__span{
-    padding: 10px;
-}
-
-.titulo__span--2{
-    padding: 25px;
-}
-
-.tarjeta__precio{
-    font-size: 1.2rem;
-}
-
-
-/* footer */
-
-footer{
-    background-color: rgba(160, 4, 38, 0.884);
-    display: flex;
-    justify-content: center;
-    border: solid black 1px;
-
-}
-
-.footer__logo{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
-
-.footer__logo img{
-    width: 200px;
-}
-
-.footer__cuerpo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer__pie{
-    border-top: solid black 1px;
-}
-
-/* video flotante */
-
-.video{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.video__flotante{
-    height: 60vh;
-    border: solid white 1px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-
+/*# sourceMappingURL=styles.css.map */

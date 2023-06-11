@@ -1,0 +1,19 @@
+.indicador{
+    display: flex;
+    justify-content: start;
+
+    &__a{
+        padding: 0px 10px 0px 30px;
+        margin: 20px 0px 0px;
+        font-family:"roboto", sans-serif;
+        src: url(../fonts/Roboto-ThinItalic.ttf);
+    }
+
+
+    &__p{
+        padding: 0px 0px;
+        margin: 20px 0px 0px;
+        font-family:"roboto", sans-serif;
+        src: url(../fonts/Roboto-ThinItalic.ttf);
+    }
+}

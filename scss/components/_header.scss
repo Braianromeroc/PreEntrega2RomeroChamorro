@@ -1,0 +1,11 @@
+.header{
+    background-color: $color-principal;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    &__titulo{
+        color: $color-negro;
+    }
+}

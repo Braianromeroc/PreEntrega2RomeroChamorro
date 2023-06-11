@@ -1,0 +1,12 @@
+.video{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__flotante{
+        height: 60vh;
+        border: solid $color-blanco 1px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}

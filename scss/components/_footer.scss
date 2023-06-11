@@ -1,0 +1,23 @@
+.footer{
+    background-color: $color-principal;
+    @include footer;
+    border: solid $color-negro 1px;
+
+    &__logo{
+        @include footer;
+        padding: 30px;
+
+        img{
+            width: 200px;
+        }
+    }
+
+    &__cuerpo{
+        @include footer;
+        align-items: center;
+    }
+
+    &__pie{
+        border-top: solid $color-negro 1px;
+    }
+}
