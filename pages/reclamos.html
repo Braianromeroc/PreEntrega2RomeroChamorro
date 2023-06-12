@@ -4,140 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Reclamos</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>#LEAMOS</h1>
+    <header class="header navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <h1 class="header__titulo">#LEAMOS</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./libros.html">Nuestros Libros</a></li>
-                    <li><a href="./conocenos.html">Conocenos</a></li>
-                    <li><a href="./contactanos.html">Contactanos</a></li>
-                    <li><a href="./reclamos.html">Reclamos</a></li>
+
+            <nav class="nav collapse navbar-collapse justify-content-start justify-content-lg-end" id="navbarNavDropdown">
+                <ul class="d-flex gap-2 gap-lg-4 navbar-nav">
+                    <li><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link active" href="../pages/libros.html">Nuestros libros</a></li>
+                    <li><a class="nav-link active" href="../pages/conocenos.html">Conocenos</a></li>
+                    <li><a class="nav-link active" href="../pages/contactanos.html">Contactanos</a></li>
+                    <li><a class="nav-link active" href="./pages/reclamos.html ">Reclamos</a></li>
                 </ul>
             </nav>
+        </div>
     </header>
-
-<hr>
 
 <main>
 
-    <div>
-        <a href="./index.html">Reclamos</a>
-        <p> > Formulario de reclamos</p>
+    <!-- indicador -->
+
+    <div class="indicador">
+        <a class="indicador__a" href="./index.html">Reclamos</a>
+        <p class="indicador__p"> > Completa el formulario</p>
     </div>
 
-    <section>
-        <h2>FORMULARIO DE RECLAMOS</h2>
-        <article>
-            <p>Si tuviste algun inconveniente o necesitas info sobre el proceso de tu compra, hacenos saber completando el siguente formulario y aclarandonos tu problema/duda. Una vez enviado el formulario, estaremos respondiendole a la brevedad.</p>
-            <p>Complete el siguiente formulario:</p>
-        </article>
+
+    <section class="container-fluid">
+        <div>
+            <h2 class="tarjeta__titulo--form">FORMULARIO DE RECLAMOS</h2>
+        </div>
+
+            <article class="row">
+                <p class="col-12 col-lg-8">Si tuviste algun inconveniente o necesitas información sobre el proceso de tu compra, hacenos saber completando el siguente formulario y aclarandonos tu problema/duda. Una vez enviado el formulario, estaremos respondiendole a la brevedad.</p>
+            </article>
     </section>
 
-<form>
-
-        <h4>¿Estas realizando un reclamo?</h4>
-    <div>
-        <label for="si">
-            Si
-        <input type="radio" name="siono" id="si">
-        </label>
-        <label for="no">
-            No
-            <input type="radio" name="siono" id="no">
-        </label>
-        <label for="No-se">
-            Otro motivo
-            <input type="radio" name="siono" id="no-se">
-        </label>
+    <div class="container-fluid">
+    <h3 class="tarjeta__titulo--lanzamiento"><strong><em>Complete el siguiente formulario:</em></strong></h3>
     </div>
 
-    <div>
-        <label for="nombre">
-            Nombre y Apellido:
-        <input type="text" id="nombre" required>
+<form class="container-fluid">
+    <p>¿Estas realizando un reclamo?</p>
+    <div class="row">
+        <div class=" col-12 col-lg-6">
+            <div class="d-flex">
+            <div class="mb-2 col-6 col-md-3 col-lg-6">
+                <label for="si">
+                    Si
+                <input type="radio" name="siono" id="si">
+                </label>
+                <label for="no">
+                    No
+                    <input type="radio" name="siono" id="no">
+                </label>
+                <label for="No-se">
+                    Otro motivo
+                    <input type="radio" name="siono" id="no-se">
+                </label>
+            </div>
+            <div class="mb-2 col-6 col-md-3 col-lg-6">
+                <select name="" id="">
+                    <option disabled selected>Seleccione su pais</option>
+                    <option>Argentina</option>
+                    <option>Paraguay</option>
+                    <option>Brasil</option>
+                    <option>Uruguay</option>
+                    <option>Chile</option>
+                </select>
+            </div>
+            </div>
+
+            <div class="mb-2">
+                <label for="nombre">
+                    Nombre y Apellido:
+                <input type="text" id="nombre" required>
+                </label>
+            </div>
+
+            <div class="mb-2">
+                <label for="gmail">
+                    Gmail:
+                <input type="email" id="gmail" required>
         </label>
-    </div>
+            </div>
 
-    <div>
-        <label for="gmail">
-            Gmail:
-        <input type="email" id="gmail" required>
-        </label>
-    </div>
+            <div class="mb-2">
+                <label for="numero">
+                    Numero de telefono:
+                <input type="number" id="numero" required>
+                </label>
+            </div>
 
-    <div>
-        <label for="numero">
-            Numero de telefono:
-        <input type="number" id="numero" required>
-        </label>
-    </div>
+        </div>
 
-    <div>
-        <label for="mensaje">
-            Mensaje:
-        <textarea id="mensaje" cols=20" rows="5"></textarea>
-        </label>
-    </div>
+        <div class="col-12 col-lg-6">
+            <div class="mb-2">
+                <label for="mensaje">
+                    Mensaje:
+                <textarea id="mensaje" cols="40" rows="5"></textarea>
+                </label>
+            </div>
+        </div>
 
-    <div>
-        <select name="" id="">
-            <option disabled selected>Seleccione su pais</option>
-            <option>Argentina</option>
-            <option>Paraguay</option>
-            <option>Brasil</option>
-            <option>Uruguay</option>
-            <option>Chile</option>
-        </select>
-    </div>
 
-    <div>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar Todo</button>
+        <div class="container">
+            <div class="gap-2 d-flex justify-content-end">
+                <button type="button" class="btn btn-outline-success btn-sm">Enviar</button>
+                <button type="button" class="btn btn-outline-danger btn-sm">Borrar</button>
+            </div>
+        </div>
+
     </div>
 
 </form>
 
 </main>
 
-<hr>
 
-<footer>
+<footer class="footer container-fluid mt-3">
 
-    <div>
-        <ul>
-            <li><a href="">Preguntas frecuentes</a></li>
-            <li><a href="">Sucursales</a></li>
-            <li><a href="">Formas de pago</a></li>
-            <li><a href="">Terminos y condiciones</a></li>
-        </ul>
+
+    <div class="container row">
+
+        <div class="footer__logo col-12 col-md-4">
+            <img src="../img/leamos.png" class="img-fluid d-md-block" alt="">
+        </div>
+
+        <div class="footer__cuerpo col-6 col-md-4 mt-md-4">
+            <ul>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Sucursales</a></li>
+                <li><a href="">Formas de pago</a></li>
+                <li><a href="">Terminos y condiciones</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__cuerpo col-6 col-md-4 mt-md-4">
+            <ul>
+                <li><a href="">Politicas de cambio</a></li>
+                <li><a href="">Defensa del consumidor</a></li>
+                <li><a href="">Politica de envio</a></li>
+                <li><a href="">Politica de reembolso</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__pie text-center">
+            <p>Copyright © 2023. All rights reserved.</p>
+        </div>
+
     </div>
 
-    <div>
-        <ul>
-            <li><a href="">Politicas de cambio</a></li>
-            <li><a href="">Defensa del consumidor</a></li>
-            <li><a href="">Politica de envio</a></li>
-            <li><a href="">Politica de reembolso</a></li>
-        </ul>
-    </div>
-
-    <div>
-        <p>Copyright © 2023. All rights reserved.</p>
-    </div>
-
-    <div class="arrepentimiento">
-        <p><a href="">ARREPENTIMIENTO DE COMPRA</a></p>
-    </div>
-
-    </footer>
-
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -10,16 +10,30 @@
             margin: 20px;
         }
 
-        &--lanzamiento{
-            display: flex;
-            justify-content: start;
-            margin-bottom: 20px;
-        }
-
         &--secundario{
             font-size: 0.8rem;
             color: $color-rojo;
         }
+
+        &--contacto{
+            @include cards;
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        &--form{
+            @include cards;
+            margin-top: 15px;
+            font-size: 2rem
+        }
+
+
+        &--lanzamiento{
+            @include cards;
+            margin-bottom: 20px;
+        }
+
+
     }
 
     &__formato{

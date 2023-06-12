@@ -13,6 +13,10 @@ a {
   color: black;
 }
 
+h3 {
+  font-size: 1.2rem;
+}
+
 .nav {
   display: flex;
   justify-content: end;
@@ -69,14 +73,26 @@ a {
   justify-content: center;
   margin: 20px;
 }
+.tarjeta__titulo--secundario {
+  font-size: 0.8rem;
+  color: red;
+}
+.tarjeta__titulo--contacto {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.tarjeta__titulo--form {
+  display: flex;
+  justify-content: start;
+  margin-top: 15px;
+  font-size: 2rem;
+}
 .tarjeta__titulo--lanzamiento {
   display: flex;
   justify-content: start;
   margin-bottom: 20px;
-}
-.tarjeta__titulo--secundario {
-  font-size: 0.8rem;
-  color: red;
 }
 .tarjeta__formato {
   border: 2px solid black;
@@ -105,7 +121,6 @@ a {
   background-color: rgba(160, 4, 38, 0.884);
   display: flex;
   justify-content: center;
-  border: solid black 1px;
 }
 .footer__logo {
   display: flex;
@@ -122,6 +137,18 @@ a {
 }
 .footer__pie {
   border-top: solid black 1px;
+}
+
+.article__texto {
+  display: flex;
+  justify-content: center;
+}
+.article__img {
+  display: flex;
+  justify-content: center;
+}
+.article__img img {
+  width: 50%;
 }
 
 .video {

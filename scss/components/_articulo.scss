@@ -1,0 +1,14 @@
+.article{
+
+    &__texto{
+        @include footer;
+    }
+
+    &__img{
+        @include footer;
+
+        img{
+            width: 50%;
+        }
+    }
+}
