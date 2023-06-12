@@ -1,5 +1,5 @@
 .footer{
-    background-color: $color-principal;
+    @include background;
     @include footer;
 
     &__logo{
@@ -14,9 +14,17 @@
     &__cuerpo{
         @include footer;
         align-items: center;
+
+        & ul li a{
+            color: $color-blanco-opaco;
+        }
     }
 
     &__pie{
         border-top: solid $color-negro 1px;
+
+        & p{
+            color: $color-blanco-opaco;
+        }
     }
 }

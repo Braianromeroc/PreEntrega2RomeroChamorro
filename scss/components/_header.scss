@@ -1,11 +1,16 @@
 .header{
-    background-color: $color-principal;
+    @include background;
 
     position: sticky;
     top: 0;
     z-index: 1;
 
     &__titulo{
-        color: $color-negro;
+        color: $color-blanco;
     }
+
+    &__cuerpo .nav ul li .nav-link{
+        color: $color-blanco-opaco;
+    }
+
 }

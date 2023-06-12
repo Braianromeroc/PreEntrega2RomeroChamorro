@@ -18,6 +18,7 @@ a{
 $color-principal: rgba(160, 4, 38, 0.884);
 $color-negro: black;
 $color-blanco: white;
+$color-blanco-opaco: rgb(204, 198, 198);
 $color-rojo: red;
 
 h3{
@@ -37,4 +38,9 @@ h3{
 @mixin cards{
     display: flex;
     justify-content: start;
+}
+
+@mixin background{
+    background-color: $color-principal;
+    background: linear-gradient(90deg, rgba(65,16,16,1) 0%, rgba(160,4,38,1) 50%, rgba(65,16,16,1) 100%);
 }
