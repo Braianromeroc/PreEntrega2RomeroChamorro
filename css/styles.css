@@ -66,6 +66,17 @@ h3 {
   padding: 25px;
 }
 
+.boton {
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  border: black solid 1px;
+}
+.boton:hover {
+  background-color: rgba(160, 4, 38, 0.884);
+  border: black solid 1px;
+}
+
 .tarjeta {
   margin-bottom: 30px;
 }
@@ -82,6 +93,11 @@ h3 {
   justify-content: center;
   margin: 20px;
   text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+.tarjeta__titulo--personalizado2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 .tarjeta__titulo--secundario {
   font-size: 0.8rem;
@@ -160,6 +176,7 @@ h3 {
 .article__texto {
   display: flex;
   justify-content: center;
+  display: flex;
 }
 .article__img {
   display: flex;

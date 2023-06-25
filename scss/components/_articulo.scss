@@ -2,6 +2,7 @@
 
     &__texto{
         @include footer;
+        display: flex;
     }
 
     &__img{
